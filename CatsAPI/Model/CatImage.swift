@@ -7,9 +7,8 @@
 
 import Foundation
 
-struct CatImage: Codable {
-    let height: Int?
-    let id: String?
-    let url: String?
-    let width: Int?
+struct CatImage: Decodable, Identifiable {
+    let id: String
+    let url: URL
+    let breeds: [CatBreed]
 }
