@@ -9,29 +9,26 @@ import Foundation
 
 class MockCatService: CatViewServiceDelegate {
 
-    var result: Result<[CatImage], DemoError>?
+    var result: Result<[CatImage], NetworkError>?
 
     func cats() -> [CatImage]? {
         do {
             guard let fileURL = Bundle.main.url(forResource: "CatsMock", withExtension: "json") else {
-                return nil
+                throw NetworkError.noData
             }
             let data = try Data(contentsOf: fileURL)
             return try JSONDecoder().decode([CatImage].self, from: data)
-            
-        } catch let error {
-            print(error.localizedDescription)
+        } catch {
+            print("Error loading CatsMock.json: \(error.localizedDescription)")
             return nil
         }
     }
 
-    func fetchCatData(completion: @escaping (Result<[CatImage]?, DemoError>) -> Void) {
+    func fetchCatData(completion: @escaping (Result<[CatImage]?, NetworkError>) -> Void) {
         if let result = result {
-            let catResult: Result<[CatImage]?, DemoError> = result.map { $0 }
-            completion(catResult)
+            completion(result.map { $0 })
         } else {
-            let errorResult: Result<[CatImage]?, DemoError> = .failure(.noData)
-            completion(errorResult)
+            completion(.failure(.noData))
         }
     }
 }

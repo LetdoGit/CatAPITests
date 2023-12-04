@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0012D79A2B1DC11900DD14DC /* CatViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0012D7992B1DC11900DD14DC /* CatViewService.swift */; };
-		0055F0502B1DD1590002E441 /* CatsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 0055F04F2B1DD1590002E441 /* CatsMock.json */; };
+		0055F0522B1DE2020002E441 /* CatsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 0055F0512B1DE2020002E441 /* CatsMock.json */; };
 		00ECB7762B18612E00549D20 /* CatsAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7752B18612E00549D20 /* CatsAPIApp.swift */; };
 		00ECB77A2B18613100549D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00ECB7792B18613100549D20 /* Assets.xcassets */; };
 		00ECB77D2B18613100549D20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00ECB77C2B18613100549D20 /* Preview Assets.xcassets */; };
@@ -44,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		0012D7992B1DC11900DD14DC /* CatViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewService.swift; sourceTree = "<group>"; };
-		0055F04F2B1DD1590002E441 /* CatsMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CatsMock.json; sourceTree = "<group>"; };
+		0055F0512B1DE2020002E441 /* CatsMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CatsMock.json; sourceTree = "<group>"; };
 		00ECB7722B18612E00549D20 /* CatsAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ECB7752B18612E00549D20 /* CatsAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsAPIApp.swift; sourceTree = "<group>"; };
 		00ECB7792B18613100549D20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				0012D7992B1DC11900DD14DC /* CatViewService.swift */,
+				00ECB7C22B1D7D4300549D20 /* MockCatService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -180,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				00ECB7BE2B19781600549D20 /* CatViewModel.swift */,
-				00ECB7C22B1D7D4300549D20 /* MockCatService.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,8 +188,8 @@
 		00ECB7C62B1D8A2300549D20 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				0055F04F2B1DD1590002E441 /* CatsMock.json */,
 				00ECB7C42B1D8A1200549D20 /* Helpers.swift */,
+				0055F0512B1DE2020002E441 /* CatsMock.json */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 			files = (
 				00ECB77D2B18613100549D20 /* Preview Assets.xcassets in Resources */,
 				00ECB77A2B18613100549D20 /* Assets.xcassets in Resources */,
-				0055F0502B1DD1590002E441 /* CatsMock.json in Resources */,
+				0055F0522B1DE2020002E441 /* CatsMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

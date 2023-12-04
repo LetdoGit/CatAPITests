@@ -10,36 +10,35 @@ import SwiftUI
 
 struct CatView: View {
     @ObservedObject var viewModel = CatViewModel()
-
+    @State private var searchText = ""
+    
     var body: some View {
         NavigationView {
-            List(viewModel.cats.filter { !$0.breeds.isEmpty }) { cat in
-                HStack {
-                    AsyncImage(url: cat.url) { image in
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 150, height: 150)
-                            .cornerRadius(10)
-                    } placeholder: {
-                        ProgressView()
-                    }
-
-                    VStack(alignment: .leading) {
-                        ForEach(cat.breeds) { breed in
-                            Text(breed.name)
-                                .font(.headline)
-                                .padding(.top, 8)
-                        }
+            VStack {
+                List(filteredCats) { cat in
+                    HStack{
+                        CatImageView(cat: cat)
+                        CatTextView(cats: cat.breeds)
                     }
                 }
+                .listStyle(InsetGroupedListStyle())
+                .searchable(text: $searchText)
             }
-
-            .listStyle(InsetGroupedListStyle())
             .navigationTitle("Cats")
         }
         .onAppear {
             viewModel.fetchCats()
+        }
+    }
+    
+    var filteredCats: [CatImage] {
+        if searchText.isEmpty {
+            return viewModel.cats.filter { !$0.breeds.isEmpty }
+        } else {
+            return viewModel.cats.filter { cat in
+                !cat.breeds.isEmpty &&
+                cat.breeds.contains(where: { $0.name.localizedCaseInsensitiveContains(searchText) })
+            }
         }
     }
 }
@@ -47,3 +46,4 @@ struct CatView: View {
 #Preview {
     CatView()
 }
+

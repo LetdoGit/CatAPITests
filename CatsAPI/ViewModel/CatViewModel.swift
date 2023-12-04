@@ -25,6 +25,7 @@ class CatViewModel: ObservableObject {
             case .success(let cats):
                 DispatchQueue.main.async {
                     self.cats = cats ?? []
+                    print(cats)
                 }
             case .failure(let error):
                 print(error)

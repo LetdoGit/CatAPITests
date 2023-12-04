@@ -8,17 +8,39 @@
 import Foundation
 import SwiftUI
 
-struct CatRow: View {
+struct CatImageView: View {
     
-    let cat: CatBreed
+    let cat: CatImage
     let imageSize: CGFloat = 100
     
     var body: some View {
-        
-        HStack {
-            Text(cat.name)
+        AsyncImage(url: cat.url) { image in
+            image
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 150, height: 150)
+                .cornerRadius(10)
+        } placeholder: {
+            ProgressView()
         }
         
+    }
+    
+}
+
+struct CatTextView: View {
+  
+    let cats: [CatBreed]
+   
+    var body: some View {
+        VStack(alignment: .leading) {
+            ForEach(cats) { cat in
+                Text(cat.name)
+                    .font(.headline)
+                    .padding(.top, 8)
+            }
+        }
+   
     }
 }
 

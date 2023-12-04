@@ -7,18 +7,18 @@
 
 import Foundation
 
-enum DemoError: Error {
+enum NetworkError: Error {
     case badURL
     case noData
     case decodingError
 }
 
 protocol CatViewServiceDelegate {
-    func fetchCatData(completion: @escaping (Result<[CatImage]?, DemoError>) -> Void)
+    func fetchCatData(completion: @escaping (Result<[CatImage]?, NetworkError>) -> Void)
 }
 
 class CatViewService: CatViewServiceDelegate {
-    func fetchCatData(completion: @escaping (Result<[CatImage]?, DemoError>) -> Void) {
+    func fetchCatData(completion: @escaping (Result<[CatImage]?, NetworkError>) -> Void) {
         guard let url = URL(string: "https://api.thecatapi.com/v1/images/search?api_key=live_EpchRaXMjiqgQUf3g6PEJ1AOwZXQ9wooSzckQHJ26KiSUvU2WGbH6ttw4Xg7YfNP&limit=100") else {
             return completion(.failure(.badURL))
         }

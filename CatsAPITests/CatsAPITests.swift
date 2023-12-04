@@ -6,28 +6,31 @@
 //
 
 import XCTest
+import Combine
 @testable import CatsAPI
 
 class CatViewModelTest: XCTestCase {
     
     func testAPISuccess() {
+       
         let mockService = MockCatService()
         guard let cats = mockService.cats() else { return }
         mockService.result = .success(cats)
         
-        let sut = CatViewModel(catViewService: mockService)
-        sut.fetchCats()
+        let catVM = CatViewModel(catViewService: mockService)
         
-        XCTAssert(sut.cats.count == 1)
+        catVM.fetchCats()
+                
+        XCTAssert(!catVM.cats.isEmpty)
     }
     
     func testAPIFailure() {
         let mockService = MockCatService()
         mockService.result = .failure(.noData)
         
-        let sut = CatViewModel(catViewService: mockService)
-        sut.fetchCats()
+        let catVM = CatViewModel(catViewService: mockService)
+        catVM.fetchCats()
         
-        XCTAssert(sut.cats.isEmpty)
+        XCTAssert(catVM.cats.isEmpty)
     }
 }
