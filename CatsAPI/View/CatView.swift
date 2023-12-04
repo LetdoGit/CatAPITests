@@ -47,4 +47,3 @@ struct CatView: View {
 #Preview {
     CatView()
 }
-

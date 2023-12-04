@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0012D79A2B1DC11900DD14DC /* CatViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0012D7992B1DC11900DD14DC /* CatViewService.swift */; };
+		0055F0502B1DD1590002E441 /* CatsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 0055F04F2B1DD1590002E441 /* CatsMock.json */; };
 		00ECB7762B18612E00549D20 /* CatsAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7752B18612E00549D20 /* CatsAPIApp.swift */; };
 		00ECB77A2B18613100549D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00ECB7792B18613100549D20 /* Assets.xcassets */; };
 		00ECB77D2B18613100549D20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00ECB77C2B18613100549D20 /* Preview Assets.xcassets */; };
@@ -15,11 +17,10 @@
 		00ECB7932B18613100549D20 /* CatsAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7922B18613100549D20 /* CatsAPIUITestsLaunchTests.swift */; };
 		00ECB7A32B18626400549D20 /* CatBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7A22B18626400549D20 /* CatBreed.swift */; };
 		00ECB7A62B18636200549D20 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7A52B18636200549D20 /* CatImage.swift */; };
-		00ECB7AA2B18FFDB00549D20 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7A92B18FFDB00549D20 /* ErrorView.swift */; };
 		00ECB7AE2B1900B600549D20 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7AD2B1900B600549D20 /* LoadingView.swift */; };
 		00ECB7BF2B19781600549D20 /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7BE2B19781600549D20 /* CatViewModel.swift */; };
 		00ECB7C12B198C0900549D20 /* CatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7C02B198C0900549D20 /* CatRow.swift */; };
-		00ECB7C32B1D7D4300549D20 /* MockCatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7C22B1D7D4300549D20 /* MockCatViewModel.swift */; };
+		00ECB7C32B1D7D4300549D20 /* MockCatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7C22B1D7D4300549D20 /* MockCatService.swift */; };
 		00ECB7C52B1D8A1200549D20 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7C42B1D8A1200549D20 /* Helpers.swift */; };
 		00ECB7C82B1D8B4800549D20 /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECB7C72B1D8B4800549D20 /* CatView.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0012D7992B1DC11900DD14DC /* CatViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewService.swift; sourceTree = "<group>"; };
+		0055F04F2B1DD1590002E441 /* CatsMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CatsMock.json; sourceTree = "<group>"; };
 		00ECB7722B18612E00549D20 /* CatsAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ECB7752B18612E00549D20 /* CatsAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsAPIApp.swift; sourceTree = "<group>"; };
 		00ECB7792B18613100549D20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,11 +56,10 @@
 		00ECB7922B18613100549D20 /* CatsAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		00ECB7A22B18626400549D20 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
 		00ECB7A52B18636200549D20 /* CatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImage.swift; sourceTree = "<group>"; };
-		00ECB7A92B18FFDB00549D20 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		00ECB7AD2B1900B600549D20 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		00ECB7BE2B19781600549D20 /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
 		00ECB7C02B198C0900549D20 /* CatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRow.swift; sourceTree = "<group>"; };
-		00ECB7C22B1D7D4300549D20 /* MockCatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCatViewModel.swift; sourceTree = "<group>"; };
+		00ECB7C22B1D7D4300549D20 /* MockCatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCatService.swift; sourceTree = "<group>"; };
 		00ECB7C42B1D8A1200549D20 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		00ECB7C72B1D8B4800549D20 /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0055F04E2B1DCD5F0002E441 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0012D7992B1DC11900DD14DC /* CatViewService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		00ECB7692B18612E00549D20 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		00ECB7742B18612E00549D20 /* CatsAPI */ = {
 			isa = PBXGroup;
 			children = (
+				0055F04E2B1DCD5F0002E441 /* Service */,
 				00ECB7C62B1D8A2300549D20 /* Helpers */,
 				00ECB7BD2B19780900549D20 /* ViewModel */,
 				00ECB7A12B18623600549D20 /* Model */,
@@ -149,7 +160,6 @@
 		00ECB79F2B18622A00549D20 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				00ECB7A92B18FFDB00549D20 /* ErrorView.swift */,
 				00ECB7AD2B1900B600549D20 /* LoadingView.swift */,
 				00ECB7C02B198C0900549D20 /* CatRow.swift */,
 				00ECB7C72B1D8B4800549D20 /* CatView.swift */,
@@ -170,7 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				00ECB7BE2B19781600549D20 /* CatViewModel.swift */,
-				00ECB7C22B1D7D4300549D20 /* MockCatViewModel.swift */,
+				00ECB7C22B1D7D4300549D20 /* MockCatService.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -178,6 +188,7 @@
 		00ECB7C62B1D8A2300549D20 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				0055F04F2B1DD1590002E441 /* CatsMock.json */,
 				00ECB7C42B1D8A1200549D20 /* Helpers.swift */,
 			);
 			path = Helpers;
@@ -289,6 +300,7 @@
 			files = (
 				00ECB77D2B18613100549D20 /* Preview Assets.xcassets in Resources */,
 				00ECB77A2B18613100549D20 /* Assets.xcassets in Resources */,
+				0055F0502B1DD1590002E441 /* CatsMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +326,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				00ECB7A62B18636200549D20 /* CatImage.swift in Sources */,
-				00ECB7AA2B18FFDB00549D20 /* ErrorView.swift in Sources */,
 				00ECB7A32B18626400549D20 /* CatBreed.swift in Sources */,
 				00ECB7C12B198C0900549D20 /* CatRow.swift in Sources */,
 				00ECB7AE2B1900B600549D20 /* LoadingView.swift in Sources */,
 				00ECB7C52B1D8A1200549D20 /* Helpers.swift in Sources */,
 				00ECB7BF2B19781600549D20 /* CatViewModel.swift in Sources */,
-				00ECB7C32B1D7D4300549D20 /* MockCatViewModel.swift in Sources */,
+				00ECB7C32B1D7D4300549D20 /* MockCatService.swift in Sources */,
 				00ECB7762B18612E00549D20 /* CatsAPIApp.swift in Sources */,
+				0012D79A2B1DC11900DD14DC /* CatViewService.swift in Sources */,
 				00ECB7C82B1D8B4800549D20 /* CatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

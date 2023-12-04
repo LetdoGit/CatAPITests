@@ -16,28 +16,9 @@ struct CatRow: View {
     var body: some View {
         
         HStack {
-//            ForEach(cat){ breed in
-                Text(cat.name)
-//            }
-//            if let cat = cat.url {
-//                AsyncImage(url: cat){ phase in
-//                    switch phase {
-//                    case .empty:
-//                        Text("Loading")
-//                    case .success(let image):
-//                        image
-//                            .resizable()
-//                            .frame(width: imageSize, height: imageSize)
-//                    case .failure(let error):
-//                        Text("failure")
-//                    default:
-//                        EmptyView()
-//                    }
-//                }
-//            } else {}
-
+            Text(cat.name)
         }
-
+        
     }
 }
 

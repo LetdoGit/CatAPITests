@@ -20,5 +20,83 @@
             landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5941D1FE-19A1-4C6D-ABE4-EA99EE2CABA1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CatsAPI/ViewModel/CatViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchCats()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5941D1FE-19A1-4C6D-ABE4-EA99EE2CABA1 - c36a16a9d51e7bcc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;CatsAPI.CatImage&gt;&gt;, CatsAPI.DemoError&gt;) -&gt; () in CatsAPI.CatViewModel.fetchCats() -&gt; ()"
+                  moduleName = "CatsAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leticiavictoriadasnevessales/Documents/xcode/CatAPITests/CatsAPI/ViewModel/CatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "5941D1FE-19A1-4C6D-ABE4-EA99EE2CABA1 - c36a16a9d51e7bcc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;CatsAPI.CatImage&gt;&gt;, CatsAPI.DemoError&gt;) -&gt; () in CatsAPI.CatViewModel.fetchCats() -&gt; ()"
+                  moduleName = "CatsAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leticiavictoriadasnevessales/Documents/xcode/CatAPITests/CatsAPI/ViewModel/CatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "5941D1FE-19A1-4C6D-ABE4-EA99EE2CABA1 - c36a16a9d51e7bcc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;CatsAPI.CatImage&gt;&gt;, CatsAPI.DemoError&gt;) -&gt; () in CatsAPI.CatViewModel.fetchCats() -&gt; ()"
+                  moduleName = "CatsAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leticiavictoriadasnevessales/Documents/xcode/CatAPITests/CatsAPI/ViewModel/CatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "5941D1FE-19A1-4C6D-ABE4-EA99EE2CABA1 - c36a16a9d51e7bcc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;CatsAPI.CatImage&gt;&gt;, CatsAPI.DemoError&gt;) -&gt; () in CatsAPI.CatViewModel.fetchCats() -&gt; ()"
+                  moduleName = "CatsAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leticiavictoriadasnevessales/Documents/xcode/CatAPITests/CatsAPI/ViewModel/CatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
